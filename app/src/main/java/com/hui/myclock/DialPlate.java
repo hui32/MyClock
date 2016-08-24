@@ -13,9 +13,10 @@ import android.view.View;
 import java.util.Calendar;
 
 /**
+ * 绘制表盘
  * Created by liuhui on 16/5/25.
  */
-public class MyClock extends View {
+public class DialPlate extends View {
     private Paint mPaint = new Paint();
     private int mWidth = 800;
     private int mHeight = 800;
@@ -28,7 +29,7 @@ public class MyClock extends View {
     private int currentH;
     private int currentM;
     private int currentS;
-    private String TAG = MyClock.class.getSimpleName();
+    private String TAG = DialPlate.class.getSimpleName();
 
     Handler handler = new Handler(){
         @Override
@@ -37,12 +38,12 @@ public class MyClock extends View {
         }
     };
 
-    public MyClock(Context context) {
+    public DialPlate(Context context) {
         this(context,null);
         //getCurrentTime();
     }
 
-    public MyClock(Context context, AttributeSet attrs) {
+    public DialPlate(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
