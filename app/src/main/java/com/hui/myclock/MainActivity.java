@@ -24,6 +24,8 @@ public class MainActivity extends Activity {
         intent.putExtra(Constant.MSG,"msg....!!!!");
         intent.putExtra(Constant.INTERVAL_MILLIS,intervalMillis);
         intent.putExtra(Constant.REPEAT_FREQUENCY,0);
+        //AlarmManagerUtil.startAlarm(this,AlarmClockReciver.class, SystemClock.currentThreadTimeMillis()+intervalMillis,ACTION_FLAG);
         AlarmManagerUtil.setAlarmTime(this,System.currentTimeMillis() + intervalMillis,intent);
+
     }
 }

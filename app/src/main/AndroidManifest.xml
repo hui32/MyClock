@@ -17,9 +17,9 @@
         </activity>
 
         <receiver android:name=".AlarmClockReciver">
-            <intent-filter>
-                <action android:name="ELITOR_CLOCK" />
-            </intent-filter>
+            <!--<intent-filter>
+                <action android:name="ALARM_CLOCK" />
+            </intent-filter>-->
         </receiver>
 
     </application>

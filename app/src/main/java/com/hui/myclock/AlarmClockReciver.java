@@ -17,7 +17,7 @@ public class AlarmClockReciver extends BroadcastReceiver{
         long intervalMillis = intent.getLongExtra(Constant.INTERVAL_MILLIS,0);
         int repeat_frequency = intent.getIntExtra(Constant.REPEAT_FREQUENCY,0);
         Log.e(TAG,"闹铃响啦~.......");
-        RingUtil.ringBell(context);
+        //RingUtil.ringBell(context);
         AlarmManagerUtil.setAlarmTime(context,System.currentTimeMillis() + intervalMillis,intent);
         /*if (repeat_frequency!=0){
             Log.e(TAG,"闹铃响啦~.......");
